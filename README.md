@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+
+
+
+
+=======
 -Form about custom ordering Rock Climbing Shoes
 
 -Choosing brand of shoe (scarpa) vs (la sportiva)
@@ -17,3 +23,4 @@
 -email input and name input: text input \*
 -drop down menu for downturn of shoe
 -radio button for mens vs women sizing
+>>>>>>> ed786fff8cb20e8ce1066a2d41d3a88431bddcb1
