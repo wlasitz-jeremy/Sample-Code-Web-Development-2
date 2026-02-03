@@ -11,9 +11,9 @@
 -womens vs mens size
 
 -Drop down menu for sizing
--radio button for type of rubber
--radio button for shoe closing type
+-radio button for type of rubber*
+-radio button for shoe closing type*
 -check boxes for which colors you want
--email input and name input: text input
+-email input and name input: text input \*
 -drop down menu for downturn of shoe
 -radio button for mens vs women sizing
