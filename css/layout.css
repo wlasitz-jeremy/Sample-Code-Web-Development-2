@@ -1,0 +1,228 @@
+/* layout.css - page structure and spacing */
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* --- containers --- */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container--narrow {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* TODO: .container--narrow is supposed to be narrower than .container so
+   that forms and text-heavy sections don't stretch too wide. Right now it
+   is identical and does nothing. Give it a smaller max-width (around 680px). */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.inner {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/* --- header --- */
+
+.site-header {
+  background-color: #7a1f3d;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header .container {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.site-nav a:hover {
+  color: #c9a84c;
+}
+
+/* --- sections --- */
+
+.section {
+  padding: 4rem 0;
+}
+
+.section--white {
+  background-color: #ffffff;
+}
+
+.section--offwhite
+{
+  background-color: #faf8f4;
+}
+
+.section--dark {
+  background-color: #7a1f3d;
+  color: #ffffff;
+}
+
+/* --- hero --- */
+
+.hero{
+  background-color: #fdf6e3;
+  /* FIXME: height clips content when the browser font size is increased or on
+     small screens. Replace height with min-height and add padding so the
+     section can grow to fit its content. */
+  height: 480px;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+  text-align: center;
+  border-bottom: 4px solid #c9a84c;
+}
+
+.hero-content h1 {
+  color: #c4b590;
+}
+
+.hero-tagline {
+  color: #4a4540;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* --- page hero (contact.html) --- */
+
+.page-hero {
+  background-color: #7a1f3d;
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-hero-subtitle{
+    color: #e8e4dc;
+  max-width: 520px;
+  margin: 0 auto;
+  }
+
+/* --- card grid --- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* TODO: The card grid has no responsive styles. On a narrow screen all three
+   columns get squeezed together. Add a media query so the grid switches to
+   one column on small screens. Try a max-width breakpoint around 700px. */
+
+/* --- faq --- */
+
+.faq-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* --- footer --- */
+
+.site-footer {
+  background-color: #1e1a17;
+  color: #9e9890;
+  padding: 2.5rem 0;
+  font-size: 0.875rem;
+}
+
+    .site-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer p{
+  margin: 0;
+}
+
+.footer-nav ul{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  color: #9e9890;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #c9a84c;
+}
+
+/* this rule does the same thing as .footer-nav a above but with higher specificity */
+.site-footer .footer-nav ul li a {
+  color: #9e9890;
+  text-decoration: none;
+}

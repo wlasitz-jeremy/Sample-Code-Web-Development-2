@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — The Aristocats Fan Page</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="site-logo">🐱</p>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main>
+        <section class="page-hero">
+          <div class="container">
+            <h1>Contact Us</h1>
+            <p class="page-hero-subtitle">
+              Have a favourite Aristocats memory? Found a mistake on the site?
+              We'd love to hear from you.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section--white">
+          <div class="container container--narrow">
+            <form class="contact-form" action="#" method="post" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Thomas O'Malley"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">— Please choose —</option>
+                  <option value="general">General enquiry</option>
+                  <option value="correction">Report a mistake</option>
+                  <option value="suggestion">Content suggestion</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="favourite">Favourite Character</label>
+                <select id="favourite" name="favourite">
+                  <option value="">— Pick your favourite —</option>
+                  <option value="duchess">Duchess</option>
+                  <option value="marie">Marie</option>
+                  <option value="toulouse">Toulouse</option>
+                  <option value="berlioz">Berlioz</option>
+                  <option value="omalley">Thomas O'Malley</option>
+                  <option value="scatcat">Scat Cat</option>
+                  <option value="edgar">Edgar (villain pick, respect)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Tell us what's on your mind…"
+                ></textarea>
+              </div>
+
+              <div class="form-group form-group--checkbox">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  value="yes"
+                />
+                <label for="newsletter">
+                  Sign me up for very occasional cat-related updates.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                  Clear Form
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="section section--offwhite">
+          <div class="inner">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <h3>Is this an official Disney site?</h3>
+                <p>
+                  Absolutely not. This is a fan page created as a student web
+                  development project. All characters and related materials are
+                  the property of The Walt Disney Company.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>Can I contribute content?</h3>
+                <p>
+                  We love the enthusiasm! Send us a message using the form above
+                  and let us know what you'd like to add. We review all
+                  suggestions before posting anything.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>How long will it take to get a reply?</h3>
+                <p>
+                  We're students, so please be patient. We aim to respond within
+                  a week, though it may take longer during exam season.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>Why The Aristocats specifically?</h3>
+                <p>
+                  Honestly? It came up in a random generator. But the more we
+                  worked on it, the more we appreciated this underrated gem of
+                  the Disney canon. Everybody wants to be a cat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          The Aristocats Fan Page &mdash; A student project. Not affiliated with
+          Disney.
+        </p>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

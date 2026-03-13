@@ -1,0 +1,228 @@
+/* components.css - buttons, cards, and form styles */
+
+/* --- buttons --- */
+
+.btn {
+  display: inline-block; /* makes the link behave like a button */
+  padding: 0.75rem 1.75rem; /* top/bottom and left/right padding */
+  font-size: 0.875rem; /* slightly smaller than body text */
+  font-weight: 700; /* bold text */
+  letter-spacing: 0.06em; /* spreads the letters out a bit */
+  text-transform: uppercase; /* makes all the text caps */
+  text-decoration: none; /* removes underline */
+  border: 2px solid transparent; /* border colour is set per variant */
+  border-radius: 4px; /* slightly rounded corners */
+  cursor: pointer; /* shows a hand cursor on hover */
+  transition: background-color 200ms ease; /* animates background colour */
+}
+
+/* TODO: .btn only transitions background-color. Add color and border-color to
+   the transition so changes animate smoothly. Also add a :focus-visible style
+   so keyboard users can see which button is focused — there is currently no
+   visible focus indicator on buttons. */
+
+.btn-primary {
+  background-color: #7a1f3d; /* dark red background */
+  color: #ffffff; /* white text */
+  border-color: #7a1f3d; /* border matches the background */
+}
+
+.btn-primary:hover {
+  background-color: #5a1530; /* darker red on hover */
+  border-color: #5a1530; /* keep border in sync */
+  color: #ffffff; /* keep text white */
+}
+
+.btn-secondary {
+  background-color: transparent; /* no fill */
+  color: #7a1f3d; /* red text */
+  border-color: #7a1f3d; /* red border */
+}
+
+.btn-secondary:hover {
+  background-color: #7a1f3d; /* fill in the red on hover */
+  color: #ffffff; /* flip to white text */
+}
+
+/* --- cards --- */
+
+.card {
+  background-color: #ffffff; /* white card background */
+  border: 1px solid #e8e4dc; /* light grey border */
+  border-radius: 8px; /* rounded corners */
+  padding: 1.5rem; /* inner spacing */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* subtle drop shadow */
+}
+
+
+
+
+
+
+
+
+
+
+/* TODO: Add a hover state to .card. A small translateY(-2px) and a slightly
+   larger box-shadow gives a nice "lift" effect. You will also need to add a
+   transition to .card itself so the effect animates instead of snapping. */
+
+.card-icon {
+  font-size: 2.5rem; /* big emoji icon */
+  margin-bottom: 0.75rem; /* space below the icon */
+  line-height: 1; /* prevent extra height from line-height */
+}
+
+.card h3 {
+  font-size: 1.125rem; /* slightly larger than body */
+  margin-bottom: 0.5rem; /* space below heading */
+  color: #c9bfb5; /* red heading */
+}
+
+.card p {
+  color: #4a4540; /* dark grey body text */
+  margin-bottom: 0; /* remove default paragraph margin */
+}
+
+/* --- contact form --- */
+
+.contact-form {
+  display: flex; /* stack fields vertically */
+  flex-direction: column; /* one field per row */
+  gap: 1.25rem; /* space between each field group */
+}
+
+
+
+
+  .form-group{
+  display: flex; /* stack label above input */
+  flex-direction: column; /* label on top, input below */
+  gap: 0.375rem; /* small gap between label and input */
+  }
+
+.contact-form label {
+  font-size: 0.875rem; /* small label text */
+  font-weight: 700; /* bold label */
+  color: #4a4540; /* dark grey */
+}
+
+/* shared styles for all form inputs, selects, and textareas */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%; /* fill the available width */
+  padding: 0.625rem 0.875rem; /* comfortable click target */
+  font-family: "Lato", Arial, sans-serif; /* match the site font */
+  font-size: 1rem; /* normal reading size */
+  color: #1e1a17; /* near-black text */
+  background-color: #ffffff; /* white background */
+  border: 1px solid #e8e4dc; /* light border */
+  border-radius: 4px; /* slightly rounded */
+  outline: none; /* removes the default focus ring */
+}
+
+/* styles text inputs */
+.contact-form input[type="text"] {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  color: #1e1a17;
+  background-color: #ffffff;
+  border: 1px solid #e8e4dc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* styles email inputs */
+.contact-form input[type="email"]
+
+{
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  color: #1e1a17;
+  background-color: #ffffff;
+  border: 1px solid #e8e4dc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* FIXME: the two rules above are identical and already covered by the shared
+   rule above them. Combine them into a single selector — or remove them
+   entirely and rely on the shared rule. Also, outline: none removes the
+   browser's focus ring with nothing to replace it — this breaks keyboard
+   accessibility. Add a :focus style with a visible border or outline instead. */
+
+.contact-form select {
+  padding-right: 2.5rem; /* extra room for the custom arrow */
+  appearance: none; /* hide the default browser arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%234a4540' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; /* only show the arrow once */
+  background-position: right 0.875rem center; /* position arrow on the right */
+}
+
+.contact-form textarea {
+  resize: vertical; /* only allow resizing up and down */
+  min-height: 120px; /* don't let it shrink too small */
+}
+
+.form-group--checkbox {
+  flex-direction: row; /* put checkbox and label side by side */
+  align-items: flex-start; /* align to top in case label wraps */
+  gap: 0.625rem; /* space between checkbox and label */
+}
+
+.form-group--checkbox input[type="checkbox"] {
+  width: 1rem; /* fixed size */
+  height: 1rem; /* fixed size */
+  flex-shrink: 0; /* don't let it squish */
+  margin-top: 0.2rem; /* nudge down to align with label text */
+  accent-color: #7a1f3d; /* colour the checkbox to match the brand */
+}
+
+.form-group--checkbox label {
+  font-weight: 400; /* normal weight for checkbox label */
+  cursor: pointer; /* clicking the label toggles the checkbox */
+}
+
+.form-actions {
+  display: flex; /* put buttons side by side */
+  gap: 1rem; /* space between buttons */
+  margin-top: 0.5rem; /* a little breathing room above the buttons */
+}
+
+/* --- faq items --- */
+
+.faq-item {
+  background-color: #ffffff; /* white background */
+  border: 1px solid #e8e4dc; /* light border */
+  border-radius: 8px; /* rounded corners */
+  padding: 1.5rem; /* inner spacing */
+  /* FIXME: this fixed height cuts off content if the text is long or the
+     browser font size is larger than expected. Remove height and overflow
+     so the element sizes itself naturally. */
+  height: 140px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.faq-item h3 {
+  color: #7a1f3d; /* red question heading */
+  margin-bottom: 0.5rem; /* space below the question */
+}
+
+.faq-item p {
+  color: #4a4540; /* dark grey answer text */
+  margin-bottom: 0; /* no extra space at the bottom */
+}
