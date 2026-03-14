@@ -1,7 +1,8 @@
 // variable declaration: const variableName = "whatever the variable is equal to"
 // camelCase
 const userName = "Judit Polgar";
-
+const testVariable = "This is a test variable";
+console.log(userName);
 const pTag = document.getElementById("user-name");
 
 // log in flag boolean variable
