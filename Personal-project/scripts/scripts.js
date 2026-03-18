@@ -35,3 +35,5 @@ allthings[1].textContent = message6;
 allthings[2].textContent = message6;
 allthings[3].textContent = message6;
 allthings[4].textContent = message6;
+
+// Getting input from a user
