@@ -13,7 +13,7 @@ footer {
 #button1 {
   margin-bottom: 1vw;
 }
-li {
+header li {
   list-style: none;
   display: flex;
   justify-content: flex-end;
