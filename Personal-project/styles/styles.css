@@ -4,3 +4,13 @@ footer {
   text-align: center;
   color: grey;
 }
+#div1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 10vw;
+}
+#label1,
+#input1,
+#button1 {
+  margin-bottom: 1vw;
+}
