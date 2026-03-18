@@ -1,7 +1,6 @@
 header,
 footer {
   font-size: 12px;
-  text-align: center;
   color: grey;
 }
 #div1 {
@@ -13,4 +12,9 @@ footer {
 #input1,
 #button1 {
   margin-bottom: 1vw;
+}
+li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }

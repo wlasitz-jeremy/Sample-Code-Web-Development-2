@@ -1,13 +1,13 @@
-// Adding text content to the page using JavaScript
-const water = "Scuba Diving is the best sport ever!";
-const message1 = `${water}`;
-const element1 = document.getElementById("water");
-element1.textContent = message1;
+// // Adding text content to the page using JavaScript
+// const water = "Scuba Diving is the best sport ever!";
+// const message1 = `${water}`;
+// const element1 = document.getElementById("water");
+// element1.textContent = message1;
 
-const land = "Rock Climbing is the best sport ever!";
-const message2 = `${land}`;
-const element2 = document.getElementById("land");
-element2.textContent = message2;
+// const land = "Rock Climbing is the best sport ever!";
+// const message2 = `${land}`;
+// const element2 = document.getElementById("land");
+// element2.textContent = message2;
 
 // Using an array and an object to create a message
 const list = ["Scuba Diving", "Rock Climbing", "Skydiving", "Skiing"];
