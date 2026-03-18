@@ -1,8 +1,8 @@
 // Adding text content to the page using JavaScript
 const water = "Scuba Diving is the best sport ever!";
-const message = `${water}`;
-const element = document.getElementById("water");
-element.textContent = message;
+const message1 = `${water}`;
+const element1 = document.getElementById("water");
+element1.textContent = message1;
 
 const land = "Rock Climbing is the best sport ever!";
 const message2 = `${land}`;
@@ -37,3 +37,8 @@ allthings[3].textContent = message6;
 allthings[4].textContent = message6;
 
 // Getting input from a user
+let userinput;
+document.getElementById("button1").onclick = function () {
+  userinput = document.getElementById("input1").value;
+  console.log(userinput);
+};
